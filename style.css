@@ -62,13 +62,16 @@
 }
 
 .box-hidden {
+  animation-duration: .6s;
+  animation-name:slideup;
   position: absolute;
-  top: 800px;
+  top: -100vh;
 }
 
 .box-visible{
-  animation-duration: .5s;
+  animation-duration: .6s;
   animation-name:slidedown;
+  top:0;
 }
 
 
@@ -121,5 +124,14 @@
   }
   to {
    top: 0;
+  }
+}
+
+@keyframes slideup {
+  from {
+    top: 0; 
+  }
+  to {
+   top: -100vh;
   }
 }
