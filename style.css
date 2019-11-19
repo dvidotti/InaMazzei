@@ -58,14 +58,19 @@
     width: 350px;
     background-color: #C7D8D2;
     height: 100vh;
+    position: absolute;
     right: 0;
 }
 
+.box-initial-hidden{
+  top: -100vh;
+}
+
 .box-hidden {
+  top: -100vh;
   animation-duration: .6s;
   animation-name:slideup;
-  position: absolute;
-  top: -100vh;
+  
 }
 
 .box-visible{
@@ -73,6 +78,7 @@
   animation-name:slidedown;
   top:0;
 }
+
 
 
 #content-menu {
